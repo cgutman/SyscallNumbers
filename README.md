@@ -6,6 +6,8 @@ Usage: `SyscallNumbers.exe [dll name or path] ...`
 The output is a TSV containing lines of:
 `[EXPORT NAME]  [SYSCALL NUMBER]`
 
+Export table parsing is performed by [Detours](https://github.com/microsoft/Detours) and disassembly is performed using [Capstone](https://www.capstone-engine.org/).
+
 ## Example
 ```
 C:\> SyscallNumbers.exe ntdll.dll win32u.dll
